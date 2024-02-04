@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  starter-kit-fast-api:
+    image: "starter-kit-fast-api"
+    container_name: "starter-kit-fast-api"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
